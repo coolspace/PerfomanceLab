@@ -19,24 +19,3 @@ for k in range(len(three_List)):
 
 
 
-
-
-
-core=extract_element_from_json(tests_data, ["tests", "id"])
-
-
-
-
-
-for value_item in values_data["values"]:
-                if core == test_id:
-                 test_item['value']=value_item['value']
-print(test_id)
-
-
-
-with open('report.json', 'w') as report_file:
-    json.dump(tests_data,  report_file, indent=4)
-
-
-

@@ -1,7 +1,7 @@
 
 import math
-file1 = input("Введите путь к первому файлу: ")
-file2 = input("Введите путь ко второму файлу: ")
+file1 = input()
+file2 = input()
 with open (file1) as file:
     data1 = file.read()
 a, b, r = map(float, data1.split())

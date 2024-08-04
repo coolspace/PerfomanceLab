@@ -1,5 +1,5 @@
 import argparse
-parser = argparse.ArgumentParser(description='Videos to images')
+parser = argparse.ArgumentParser(description='n and m')
 parser.add_argument('n', type=int)
 parser.add_argument('m', type=int)
 args = parser.parse_args()

@@ -1,7 +1,13 @@
 
 import math
-file1 = input()
-file2 = input()
+import math
+import argparse
+parser = argparse.ArgumentParser(description='circle and dots')
+parser.add_argument('file1', type=str)
+parser.add_argument('file2', type=str)
+args = parser.parse_args()
+file1=args.file1
+file2=args.file2
 with open (file1) as file:
     data1 = file.read()
 a, b, r = map(float, data1.split())

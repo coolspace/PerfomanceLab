@@ -1,8 +1,16 @@
 import json
 
-values = input("Введите путь первого файла со значениями: ")
-tests = input("Введите путь второго файла с тестами: ")
-report = input("Введите путь второго файла с отчетом: ")
+import math
+import argparse
+parser = argparse.ArgumentParser(description='vtr')
+parser.add_argument('values', type=str)
+parser.add_argument('tests', type=str)
+parser.add_argument('report', type=str)
+args = parser.parse_args()
+values=args.values
+tests=args.tests
+report=args.report
+
 with open(values, 'r') as values_file:
     values_data=json.load(values_file)
 with open(tests, 'r') as tests_file:

@@ -1,5 +1,3 @@
-
-import math
 import math
 import argparse
 parser = argparse.ArgumentParser(description='circle and dots')

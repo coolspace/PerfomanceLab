@@ -1,5 +1,11 @@
-n = int(input())
-m = int(input())
+import argparse
+parser = argparse.ArgumentParser(description='Videos to images')
+parser.add_argument('n', type=int)
+parser.add_argument('m', type=int)
+args = parser.parse_args()
+n=args.n
+m=args.m
+
 one_List = m * [int(i) for i in range(1, n + 1)]
 two_List = [' ']
 three_List = []

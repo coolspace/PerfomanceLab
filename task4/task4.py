@@ -1,6 +1,11 @@
 
 # input_file = input("Enter file paths: ")
-input_file = input("Введите путь к первому файлу: ")
+import math
+import argparse
+parser = argparse.ArgumentParser(description='input')
+parser.add_argument('input_file', type=str)
+args = parser.parse_args()
+input_file=args.input_file
 
 nums = []
 with open(input_file) as file:
